@@ -63,6 +63,8 @@ PUParticleSystem3D的常用接口如下所示：
 
 ![](./Particle3DSystem/particle4.png)
 
+目前cocos2d-x不支持Particle Universe特性如下，Particle Render中的Light Render，Emitter中的Vertex Emitter和Mesh Surface Emitter，Affector中的inter particle collider和collision avoidance affector。除此之外支持Particle Universe的所有特性。另外注意如果使用到模型粒子，由于Particle Universe支持的模型为.mesh文件，需要使用原始的fbx文件转换成c3b文件，放在相同目录替换.mesh文件才能导入到cocos2d-x中。
+
 综上所述，我们可以通过粒子系统非常方便的构建很炫酷的场景效果。
 
 **ParticleSystem3D更多的使用方法和细节请参看cpptests用例中的Particle3DTest**
